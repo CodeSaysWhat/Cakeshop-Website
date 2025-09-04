@@ -82,53 +82,27 @@ header{
     color: #fff;
     background: var(--babybrown);
  }
-
- header .icons i,
- header .icons a{
-    cursor: pointer;
-    margin-left: .5rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    width: 4.5rem;
-    text-align: center;
-    font-size: 1.7rem;
-    color: var(--black);
-    border-radius: 50%;
-    background: #eee;
- }
-
- header .icons i:hover,
- header .icons a:hover{
-    color:#fff;
-    background: var(--babybrown);
-    transform: rotate(360deg);
- }
-
- header .icons #menu-bars{
-    display: none;
- }
-
 /*HOME*/
 
 .container1 img {
     width: 100%;
-    height: screen;
+    height: 75vh;
     object-fit: cover;
 }
 
 .description1 {
-   width: 89vh;
-   height: 80vh;
-   text-align: left;
-   padding: 12% 0 0 20%; 
+   width: screen;
+   height: 50vh;
+   text-align: center;
+   padding: 10% 20% 0 20%; 
    position: absolute;
-   color: #C4A484;
+   color: #d5a575;
    text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
-        1px 1px 0 black;
-   font-size: 40px;
+        -7px 1px 0 black;
+   font-size: 65px;
 }
 
 .btn{
