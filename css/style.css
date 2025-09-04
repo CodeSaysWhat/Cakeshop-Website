@@ -33,8 +33,13 @@ html{
    background: var(--babybrown);
 }
 
-/*HEADER*/
+section {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
 
+
+/*HEADER*/
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -105,15 +110,10 @@ header{
 
 /*HOME*/
 
-.container1 {
-    display: flex;
-    flex-direction: row;
-    width: 186vh;
-    height: 100vh;
-    font-size: 24px;
-    text-align: right;  
-    padding: 8% 0 20% 3%; 
-    position: relative;
+.container1 img {
+    width: 100%;
+    height: screen;
+    object-fit: cover;
 }
 
 .description1 {
@@ -129,12 +129,6 @@ header{
         -1px 1px 0 black,
         1px 1px 0 black;
    font-size: 40px;
-}
-
-
-.container1 img {
-   height: 560px;
-    margin: 0 20% 0 14%;
 }
 
 .btn{
