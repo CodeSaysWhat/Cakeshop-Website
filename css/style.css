@@ -50,6 +50,7 @@ header{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+    z-index: 1;
  }
 
  header .cr2s{
@@ -344,23 +345,12 @@ footer {
    justify-content: space-between;
 }
 
-.social-icons {
-   margin-bottom: 5.4rem;
-   display: flex;
-   justify-content: center;
-}
-
-.social-icons i {
-   font-size: 2rem;
-   color: black;
-   padding: .8rem 2rem;
-   opacity: .5;
-   transition: color .5s;
-}
-
-.social-icons i:hover,
-.social-icons i:focus {
-   color: black;
+.social-icons img{
+   display: inline-block;
+   margin-left: 10px;
+   height: 30px;
+   width: 30px;
+   object-fit: cover;
 }
 
 .newsletter-form {
