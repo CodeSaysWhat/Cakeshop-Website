@@ -37,14 +37,18 @@ section {
    padding-bottom: 20px;
 }
 
-h2{
+h2 {
    color: #555;
 }
 
-h4{
+h4 {
    color: #555;
    font-weight: normal;
    font-size: 15px;
+}
+
+p {
+    font-size: 16px;
 }
 
 /*GENERAL ELEMENTS*/
