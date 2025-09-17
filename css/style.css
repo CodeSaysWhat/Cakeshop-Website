@@ -37,6 +37,10 @@ section {
    padding-bottom: 20px;
 }
 
+h2{
+   color: #555;
+}
+
 h4{
    color: #555;
    font-weight: normal;
@@ -127,14 +131,14 @@ header{
 
 .homeColumn{
    flex-basis: 25%;
-   padding: 10px;
+   margin-top: 30px;
+   padding: 15px;
    min-width: 200px;
    margin-bottom: 50px;
    transition: transform 0.5s;
 }
 
 .homeColumn img{
-   padding-top: 10px;
    width: 100%;
 }
 
