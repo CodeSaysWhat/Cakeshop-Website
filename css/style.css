@@ -130,7 +130,8 @@ header{
 
 /*FEATURED*/
 .homeContainer{
-   padding: 0 30px 0 30px;
+   padding: 10px 30px 20px 30px;
+   background-color:#F5F5DC;
 }
 
 .homeColumn{
@@ -160,8 +161,10 @@ header{
    justify-content: space-around;
 }
 
-.rating .fa{
-   color: #C4A484;
+/*ORDER NOW*/
+.orderContainer {
+    padding: 0 30px 0 30px;
+    display: block;
 }
 
 /*CONTACT US*/
