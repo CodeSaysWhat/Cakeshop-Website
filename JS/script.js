@@ -67,8 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
 
-// Run after DOM is ready
-document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("header", "partials/header.html");
-  loadComponent("footer", "partials/footer.html");
-});
+  // Run after DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    loadComponent("header", "/partials/header.html");
+    loadComponent("footer", "/partials/footer.html");
+  });
+  
