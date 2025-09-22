@@ -44,6 +44,37 @@ async function loadComponent(id, file) {
   }
 }
 
+//Cakes container
+document.addEventListener('DOMContentLoaded', () => {
+    // Your cakes data
+    const cakes = [
+      { name: "Chocolate Cake", price: "$15", img: "../img/cakes/normal flavors/choco.webp" },
+      { name: "Caramel Cake", price: "$12", img: "../img/cakes/normal flavors/caramel.webp" },
+      { name: "Hazelnut Cake", price: "$18", img: "../img/cakes/normal flavors/hazelnut.webp" },
+      { name: "Mango Cake", price: "$20", img: "../img/cakes/normal flavors/mango.webp" },
+      { name: "Mint Cake", price: "$14", img: "../img/cakes/normal flavors/mint.webp" }
+    ];
+  
+    // Build the HTML for each cake
+    function createMenuItem(cake) {
+      return `
+        <div class="menu-item">
+          <img src="${cake.img}" alt="${cake.name}" class="item-image">
+          <h3 class="item-name">${cake.name}</h3>
+          <p class="item-price">${cake.price}</p>
+        </div>
+      `;
+    }
+  
+    // Insert into wrapper
+    const menuColumnWrapper = document.querySelector('.cakes');
+    menuColumnWrapper.innerHTML = `
+      <div class="menu-column">
+        ${cakes.map(createMenuItem).join('')}
+      </div>
+    `;
+  });  
+
 // Run after DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("header", "partials/header.html");
