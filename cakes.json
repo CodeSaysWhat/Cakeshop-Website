@@ -1,8 +1,46 @@
 [
-    { "name": "Chocolate Cake", "price": "$15", "img": "../img/cakes/normal flavors/choco.webp" },
+    { "name": "Avengers Cake", "price": "$25", "img": "../img/cakes/characters/avengers.webp" },
+    { "name": "Batman Cake", "price": "$12", "img": "../img/cakes/characters/batman.webp" },
+    { "name": "Bluey Cake", "price": "$15", "img": "/img/cakes/characters/bluey.webp" },
+    { "name": "Frozen Cake", "price": "$17", "img": "../img/cakes/characters/frozen.webp" },
+    { "name": "LOL Surprise Cake", "price": "$18", "img": "../img/cakes/characters/lol-surprise.webp" },
+    { "name": "Mario Cake", "price": "$20", "img": "../img/cakes/characters/mario.webp" },
+    { "name": "Mickey Cake", "price": "$14", "img": "../img/cakes/characters/mickey.webp" },
+    { "name": "Minnie Cake", "price": "$22", "img": "../img/cakes/characters/minnie.webp" },
+    { "name": "Pokemon Cake", "price": "$19", "img": "../img/cakes/characters/pokemon.webp" },
+    { "name": "Spiderman Cake", "price": "$25", "img": "../img/cakes/characters/spiderman.webp" },
+
+
+    { "name": "Blue Gelato Cake", "price": "$25", "img": "../img/cakes/gelato/blue-gelato.webp" },
+    { "name": "Choco Gelato Cake", "price": "$12", "img": "../img/cakes/gelato/choco-gelato.webp" },
+    { "name": "Pink Gelato Cake", "price": "$15", "img": "/img/cakes/gelato/pink-gelato.webp" },
+    { "name": "Purple Cake", "price": "$17", "img": "../img/cakes/gelato/purple-gelato.webp" },
+    { "name": "Skyblue Gelato Cake", "price": "$18", "img": "../img/cakes/gelato/skyblue-gelato.webp" },
+    { "name": "White Gelato Cake", "price": "$20", "img": "../img/cakes/gelato/white-gelato.webp" },
+    { "name": "Yellow Gelato Cake", "price": "$14", "img": "../img/cakes/gelato/yellow-gelato.webp" },
+
+    { "name": "Blue Icecream Cake", "price": "$17", "img": "../img/cakes/ice cream/blue-icecream.webp" },
+    { "name": "Pink Icecream Cake", "price": "$18", "img": "../img/cakes/ice cream/pink-icecream.webp" },
+    { "name": "White Icecream Cake", "price": "$20", "img": "../img/cakes/ice cream/white-icecream.webp" },
+    { "name": "Yellow Icecream Cake", "price": "$14", "img": "../img/cakes/ice cream/yellow-icecream.webp" },
+
+    { "name": "Blue Lollipop Cake", "price": "$17", "img": "../img/cakes/lollipop/blue-lollipop.webp" },
+    { "name": "Lollipop Cake", "price": "$18", "img": "../img/cakes/lollipop/lollipop.webp" },
+
+    { "name": "Biscoff Cake", "price": "$25", "img": "../img/cakes/normal flavors/biscoff.webp" },
     { "name": "Caramel Cake", "price": "$12", "img": "../img/cakes/normal flavors/caramel.webp" },
+    { "name": "Chocolate Cake", "price": "$15", "img": "/img/cakes/normal flavors/choco.webp" },
+    { "name": "Cookie Cake", "price": "$17", "img": "../img/cakes/normal flavors/cookies.webp" },
     { "name": "Hazelnut Cake", "price": "$18", "img": "../img/cakes/normal flavors/hazelnut.webp" },
     { "name": "Mango Cake", "price": "$20", "img": "../img/cakes/normal flavors/mango.webp" },
-    { "name": "Mint Cake", "price": "$14", "img": "../img/cakes/normal flavors/mint.webp" }
+    { "name": "Mint Cake", "price": "$14", "img": "../img/cakes/normal flavors/mint.webp" },
+    { "name": "Rainbow Cake", "price": "$22", "img": "../img/cakes/normal flavors/rainbow.webp" },
+    { "name": "Waterfall Cake", "price": "$19", "img": "../img/cakes/normal flavors/waterfall.webp" },
+
+    { "name": "Astronaut Cake", "price": "$18", "img": "../img/cakes/themes/astronaut.webp" },
+    { "name": "Butterfly Cake", "price": "$20", "img": "../img/cakes/themes/butterfly.webp" },
+    { "name": "Dino Cake", "price": "$14", "img": "../img/cakes/themes/dino.webp" },
+    { "name": "Football Cake", "price": "$22", "img": "../img/cakes/themes/football.webp" },
+    { "name": "Unicorn Cake", "price": "$19", "img": "../img/cakes/themes/unicorn.webp" }
   ]
   

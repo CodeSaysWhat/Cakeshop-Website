@@ -86,11 +86,7 @@ header{
  }
 
  header .logo{
-    height: 5rem;
-    width: 10rem;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    height: 65px;
  }
 
  header .navbar a{
@@ -100,8 +96,7 @@ header{
     color: var(--black);
  }
 
- header .navbar a.active,
- header .navbar a:hover{
+ header .navbar a.active a:hover{
     color: #fff;
     background: var(--babybrown);
  }
