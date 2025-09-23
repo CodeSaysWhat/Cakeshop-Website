@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(err => console.error("Error loading cakes:", err));
   });
-  
 
   // Run after DOM is ready
   document.addEventListener("DOMContentLoaded", () => {

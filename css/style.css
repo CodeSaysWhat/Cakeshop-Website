@@ -96,9 +96,10 @@ header{
     color: var(--black);
  }
 
- header .navbar a.active a:hover{
-    color: #fff;
-    background: var(--babybrown);
+ header .navbar a.active,
+ header .navbar a:hover {
+   color: #fff;
+   background: var(--babybrown);
  }
 
 /*HOME*/
