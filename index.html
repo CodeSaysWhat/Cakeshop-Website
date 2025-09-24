@@ -52,7 +52,7 @@
                         <h2>Salted Caramel Cake</h2>
                         <p>₱500.00</p>
                     </div>
-                </div>
+                </div>8
             </div>
         </section>
 
@@ -75,17 +75,27 @@
         <!--CONTACT US!-->
         <section>
             <div class="contactContainer">
-                <h1 class="title">Contact Us!</h1>
-                <p>Feel free to reach out to us for any inquiries or assistance. We're here to help!</p>
-                <form>
-                    <p>Name: </p><input type = "text"></input>
-                    <p>Contact Number: </p><input type = "text"></input>
-                    <p>Email: </p><input type = "text"></input>
-                    <p>Message: </p><input type = "text"></input><br>
-                    <input type = "submit"></input>
-                </form>
+              <h1 class="title">Contact Us!</h1>
+              <p>Feel free to reach out to us for any inquiries or assistance. We're here to help!</p>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+          
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact"><br><br>
+          
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+          
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+          
+                <input type="submit" value="Submit">
+              </form>
             </div>
-        </section>
+          </section>
+          
+
         <div id="footer"></div>
         <script src="js/script.js"></script>
     </body>

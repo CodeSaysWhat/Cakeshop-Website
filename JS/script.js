@@ -37,10 +37,27 @@ async function loadComponent(id, file) {
     console.log("Loading:", file);
     const res = await fetch(file);
     if (!res.ok) throw new Error(`Failed to load ${file} (status: ${res.status})`);
+
     document.getElementById(id).innerHTML = await res.text();
     console.log(`✅ Loaded ${file} into #${id}`);
+
+    // If it's the header, adjust spacing
+    if (id === "header") adjustContentSpacing();
+
   } catch (err) {
     console.error("❌ Error loading component:", err);
+  }
+}
+
+// Adjust content padding based on header height
+function adjustContentSpacing() {
+  const header = document.getElementById("header");
+  const main = document.querySelector("main");
+
+  if (header && main) {
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = headerHeight + "px";
+    console.log(`📏 Main padding-top set to ${headerHeight}px`);
   }
 }
 
