@@ -90,7 +90,7 @@ header{
  }
 
  header .logo{
-    height: 65px;
+    height: 60px;
  }
 
  header .navbar a{
@@ -207,7 +207,7 @@ label {
    font-size: 18px;
    text-align: justify; 
    padding: 20px 20px 20px 20px;
-   margin: 20px 20px 20px 20px;
+   margin: 0px 20px 20px 20px;
 }
 
 /*FOOTER*/
