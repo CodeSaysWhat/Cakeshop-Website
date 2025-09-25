@@ -45,26 +45,31 @@ async function loadComponent(id, file) {
 }
 
 //Cakes container
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     fetch("../cakes.json")
       .then(res => res.json())
-      .then(cakes => {
-        const menuColumnWrapper = document.querySelector('.cakes');
-  
-        menuColumnWrapper.innerHTML = `
-          <div class="menu-column">
-            ${cakes.map(cake => `
-              <div class="menu-item">
-                <img src="${cake.img}" alt="${cake.name}" class="item-image">
-                <h3 class="item-name">${cake.name}</h3>
-                <p class="item-price">${cake.price}</p>
+      .then(data => {
+        Object.entries(data).forEach(([category, cakes]) => {
+          const section = document.getElementById(category);
+          if (div) {
+            div.innerHTML = `
+              <h2 class="category-title">${category}</h2>
+              <div class="menu-column">
+                ${cakes.map(cake => `
+                  <div class="menu-item">
+                    <img src="${cake.img}" alt="${cake.name}" class="item-image">
+                    <h3 class="item-name">${cake.name}</h3>
+                    <p class="item-price">${cake.price}</p>
+                  </div>
+                `).join('')}
               </div>
-            `).join('')}
-          </div>
-        `;
+            `;
+          }
+        });
       })
       .catch(err => console.error("Error loading cakes:", err));
   });
+  
 
   // Run after DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
