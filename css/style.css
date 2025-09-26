@@ -188,10 +188,11 @@ label {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
   
   .menu-item {
-    width: 200px;
+    width: 300px;
     text-align: center;
   }
   

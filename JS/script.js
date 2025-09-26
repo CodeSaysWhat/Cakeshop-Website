@@ -46,14 +46,26 @@ async function loadComponent(id, file) {
 
 //Cakes container
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../cakes.json")
+    fetch("/cakes.json")
       .then(res => res.json())
       .then(data => {
-        Object.entries(data).forEach(([category, cakes]) => {
-          const section = document.getElementById(category);
-          if (div) {
-            div.innerHTML = `
-              <h2 class="category-title">${category}</h2>
+        // Group cakes by category
+        const grouped = data.reduce((acc, cake) => {
+          if (!acc[cake.category]) {
+            acc[cake.category] = [];
+          }
+          acc[cake.category].push(cake);
+          return acc;
+        }, {});
+  
+        // Render each category
+        Object.entries(grouped).forEach(([category, cakes]) => {
+          // Handle cases where category name has spaces ("ice cream", "normal flavors")
+          const safeId = category.replace(/\s+/g, "");
+          const container = document.getElementById(safeId);
+  
+          if (container) {
+            container.innerHTML = `
               <div class="menu-column">
                 ${cakes.map(cake => `
                   <div class="menu-item">
@@ -70,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Error loading cakes:", err));
   });
   
-
+  
   // Run after DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
     loadComponent("header", "/partials/header.html");
