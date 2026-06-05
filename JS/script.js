@@ -31,6 +31,51 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function setActiveNavLink() {
+  const currentPath = window.location.pathname.toLowerCase();
+  const navLinks = document.querySelectorAll('header .navbar a');
+
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href, window.location.href).pathname.toLowerCase();
+    const isHome = currentPath === '/' && linkPath.endsWith('/index.html');
+
+    link.classList.toggle('active', currentPath === linkPath || isHome);
+  });
+}
+
+function isPageTransitionLink(link, event) {
+  if (!link || event.defaultPrevented) return false;
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return false;
+  if (link.target && link.target !== '_self') return false;
+  if (link.hasAttribute('download')) return false;
+
+  const url = new URL(link.href, window.location.href);
+  const currentUrl = new URL(window.location.href);
+
+  if (url.origin !== currentUrl.origin) return false;
+  if (url.pathname === currentUrl.pathname && url.hash) return false;
+
+  return true;
+}
+
+document.addEventListener('click', event => {
+  const link = event.target.closest('a');
+
+  if (!isPageTransitionLink(link, event)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  event.preventDefault();
+  document.body.classList.add('page-is-leaving');
+
+  window.setTimeout(() => {
+    window.location.href = link.href;
+  }, 220);
+});
+
+window.addEventListener('pageshow', () => {
+  document.body.classList.remove('page-is-leaving');
+});
+
 // Async component loader
 async function loadComponent(id, file) {
   try {
@@ -38,6 +83,7 @@ async function loadComponent(id, file) {
     const res = await fetch(file);
     if (!res.ok) throw new Error(`Failed to load ${file} (status: ${res.status})`);
     document.getElementById(id).innerHTML = await res.text();
+    if (id === "header") setActiveNavLink();
     console.log(`✅ Loaded ${file} into #${id}`);
   } catch (err) {
     console.error("❌ Error loading component:", err);

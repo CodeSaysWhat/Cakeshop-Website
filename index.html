@@ -1,84 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Sweet Delights | Home</title>
     </head>
     <body>
         <div id="header"></div>
 
-    <!--HERO SECTION-->
-        <section id = "Home">
-            <div class="hero">
-                <h1 class = "introText">Indulge in Delicious Bites!</h1>
-                <img src="img/heroImg.jpg">
-            </div>
-        </section>
-    
-    <!--ABOUT US-->
-        <section>
-            <div>
-                <h1 class="title">About Us</h1>
-                <p class="about">Welcome to Sweet Delights, your go-to destination for delectable cakes and pastries. We are passionate about creating mouthwatering treats that bring joy to every occasion. Our skilled bakers use only the finest ingredients to craft a wide variety of cakes, from classic flavors to innovative creations. Whether you're celebrating a birthday, wedding, or simply craving something sweet, Sweet Delights is here to satisfy your dessert desires. Visit us today and experience the magic of our irresistible confections!</p>
-            </div>
-        </section>
-
-    <!--FEATURED PRODUCTS-->
-        <section>
-            <div class="homeContainer">
-                <h1 class="title">Featured Products</h1>
-                <div class="homeRow">
-                    <div class="homeColumn">
-                        <a href="pages/ProductDetails.html"><img src="img/cakes/gelato/choco-gelato.webp"></a>
-                        <h2>Choco Gelato Cake</h2>
-                        <p>₱500.00</p>
-                    </div>
-                    <div class="homeColumn">
-                        <a href="pages/ProductDetails.html"><img src="img/cakes/normal flavors/choco.webp"></a>
-                        <h2>Chocolate Cake</h2>
-                        <p>₱500.00</p>
-                    </div>
-                    <div class="homeColumn">
-                        <a href="pages/ProductDetails.html"><img src="img/cakes/normal flavors/cookies.webp"></a>
-                        <h2>Cookies & Cream Cake</h2>
-                        <p>₱500.00</p>
-                    </div>
-                    <div class="homeColumn">
-                        <a href="pages/ProductDetails.html"><img src="img/cakes/normal flavors/caramel.webp"></a>
-                        <h2>Salted Caramel Cake</h2>
-                        <p>₱500.00</p>
+        <main>
+            <section id="Home" class="home-hero">
+                <div class="home-hero__content">
+                    <p class="eyebrow">Freshly baked cakes for every celebration</p>
+                    <h1>Sweet Delights</h1>
+                    <p>Beautiful cakes, soft pastries, and celebration desserts made with care from our kitchen to your table.</p>
+                    <div class="hero-actions">
+                        <a href="pages/cakes.html" class="btn btn-primary">View Cakes</a>
+                        <a href="pages/order.html" class="btn btn-secondary">Order Now</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--CONTACT US!-->
-        <section>
-            <div class="contactContainer">
-              <h1 class="title">Contact Us!</h1>
-              <p>Feel free to reach out to us for any inquiries or assistance. We're here to help!</p>
-              <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-          
-                <label for="contact">Contact Number:</label>
-                <input type="tel" id="contact" name="contact"><br><br>
-          
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-          
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-          
-                <input type="submit" value="Submit">
-              </form>
-            </div>
-          </section>
-          
+            <section class="home-section about-section">
+                <div class="section-inner two-column">
+                    <div>
+                        <p class="eyebrow">About Us</p>
+                        <h2 class="section-title">Made for birthdays, weddings, and everyday cravings.</h2>
+                    </div>
+                    <p class="section-copy">Welcome to Sweet Delights, your go-to destination for delectable cakes and pastries. We are passionate about creating mouthwatering treats that bring joy to every occasion. Our skilled bakers use fine ingredients to craft a wide variety of cakes, from classic flavors to playful new creations.</p>
+                </div>
+            </section>
+
+            <section class="home-section featured-section">
+                <div class="section-inner">
+                    <div class="section-heading">
+                        <p class="eyebrow">Customer Favorites</p>
+                        <h2 class="section-title">Featured Products</h2>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <a href="pages/productDetails.html"><img src="img/cakes/gelato/choco-gelato.webp" alt="Choco Gelato Cake"></a>
+                            <div class="product-card__body">
+                                <h3>Choco Gelato Cake</h3>
+                                <p>PHP 500.00</p>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <a href="pages/productDetails.html"><img src="img/cakes/normal flavors/choco.webp" alt="Chocolate Cake"></a>
+                            <div class="product-card__body">
+                                <h3>Chocolate Cake</h3>
+                                <p>PHP 500.00</p>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <a href="pages/productDetails.html"><img src="img/cakes/normal flavors/cookies.webp" alt="Cookies and Cream Cake"></a>
+                            <div class="product-card__body">
+                                <h3>Cookies &amp; Cream Cake</h3>
+                                <p>PHP 500.00</p>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <a href="pages/productDetails.html"><img src="img/cakes/normal flavors/caramel.webp" alt="Salted Caramel Cake"></a>
+                            <div class="product-card__body">
+                                <h3>Salted Caramel Cake</h3>
+                                <p>PHP 500.00</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-section contact-section">
+                <div class="section-inner contact-layout">
+                    <div>
+                        <p class="eyebrow">Contact Us</p>
+                        <h2 class="section-title">Have a cake in mind?</h2>
+                        <p class="section-copy">Send us your questions, custom cake ideas, or event details. We will help you choose the right sweet centerpiece.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" name="contact">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
         <div id="footer"></div>
         <script src="js/script.js"></script>
