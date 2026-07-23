@@ -102,21 +102,12 @@ p {
 .title {
     text-align: center;
     position: relative;
-    line-height: 6rem;
     color: var(--cocoa);
     font-size: 3rem;
-}
-
-.title::after {
-    content: '';
-    background: var(--accent);
-    width: 10rem;
-    height: .4rem;
-    border-radius: 99rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(3rem, 4vw, 4.8rem);
+    line-height: 1.1;
+    letter-spacing: 0;
 }
 
 .btn {
