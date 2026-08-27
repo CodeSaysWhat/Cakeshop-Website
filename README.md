@@ -18,7 +18,7 @@ Browse the available cakes and desserts.
 Provides customers with an easy way to order their favorite cakes.
 
 👩‍🍳 **About Us**  
-Information about the cake shop and its story.
+Information about the cake shop.
 
 🛒 **Shopping Cart**  
 Cart icon for accessing selected items.
