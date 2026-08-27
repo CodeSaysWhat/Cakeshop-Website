@@ -1,37 +1,37 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="img/logo.png" type="image/png" />
-    <title>Order Now!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <title>Sweet Delights | Order</title>
   </head>
   <body>
     <div id="header"></div>
-
-    <!--ORDER-->
-    <section>
-      <div>
-        <h1 class="title">Order Now</h1>
-        <div class="orderContainer">
+    <main class="page-content">
+      <section class="home-section">
+        <div class="section-inner order-layout">
           <div>
-            <p>TAKE OUT</p>
-            <img src="/img/Home/Take out.jpg" height="200px" width="300px" />
+            <p class="eyebrow">Order now</p>
+            <h1 class="section-title">Let's make your celebration sweeter.</h1>
+            <p class="section-copy">Your cart is included below. Add the occasion, collection or delivery date, and any special cake requests.</p>
+            <aside id="order-cart-summary" class="order-cart-summary" aria-live="polite"></aside>
           </div>
-          <div>
-            <p>DELIVERY</p>
-          </div>
+          <form class="contact-form" data-order-form>
+            <div class="form-group"><label for="order-name">Name</label><input id="order-name" name="name" autocomplete="name" required></div>
+            <div class="form-group"><label for="order-contact">Contact number</label><input id="order-contact" name="contact" type="tel" autocomplete="tel" required></div>
+            <div class="form-group"><label for="order-date">Preferred date</label><input id="order-date" name="date" type="date" required></div>
+            <div class="form-group"><label for="fulfilment">Fulfilment</label><select id="fulfilment" name="fulfilment"><option>Take out</option><option>Delivery</option></select></div>
+            <div class="form-group"><label for="special-request">Special cake request</label><textarea id="special-request" name="specialRequest" rows="4" placeholder="For example: custom message, theme, colours, flavour, size, dietary needs, or reference link."></textarea></div>
+            <button class="btn btn-primary">Save order request</button>
+            <p role="status" class="form-status"></p>
+          </form>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <div id="footer"></div>
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -1,56 +1,33 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="img/logo.png" type="image/png" />
-    <title>Cakes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>Sweet Delights | Cakes</title>
   </head>
-
   <body class="featured-section">
     <div id="header"></div>
-    <br /><br />
-    <h1 class="title">Our Cakes</h1>
-
-    <section class="cake-section">
+    <main class="page-content">
+      <h1 class="title page-title">Our Cakes</h1>
       <div class="section-inner">
-        <h2 class="section-title">Character Cakes</h2>
-        <br />
-        <div id="characters"></div>
+        <div class="category-tabs" role="tablist" aria-label="Cake categories">
+          <button id="characters-tab" class="category-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="characters-panel" data-category-tab="characters">Character cakes</button>
+          <button id="gelato-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="gelato-panel" data-category-tab="gelato">Gelato cakes</button>
+          <button id="ice-cream-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="ice-cream-panel" data-category-tab="ice cream">Ice cream cakes</button>
+          <button id="normal-flavors-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="normal-flavors-panel" data-category-tab="normal flavors">Classic flavours</button>
+          <button id="themes-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="themes-panel" data-category-tab="themes">Theme cakes</button>
+        </div>
+        <section class="cake-section category-panel" id="characters-panel" role="tabpanel" aria-labelledby="characters-tab" data-category="characters"><h2 class="section-title">Character Cakes</h2><div data-category-content></div></section>
+        <section class="cake-section category-panel" id="gelato-panel" role="tabpanel" aria-labelledby="gelato-tab" data-category="gelato" hidden><h2 class="section-title">Gelato Cakes</h2><div data-category-content></div></section>
+        <section class="cake-section category-panel" id="ice-cream-panel" role="tabpanel" aria-labelledby="ice-cream-tab" data-category="ice cream" hidden><h2 class="section-title">Ice Cream Cakes</h2><div data-category-content></div></section>
+        <section class="cake-section category-panel" id="normal-flavors-panel" role="tabpanel" aria-labelledby="normal-flavors-tab" data-category="normal flavors" hidden><h2 class="section-title">Classic Flavours</h2><div data-category-content></div></section>
+        <section class="cake-section category-panel" id="themes-panel" role="tabpanel" aria-labelledby="themes-tab" data-category="themes" hidden><h2 class="section-title">Theme Cakes</h2><div data-category-content></div></section>
       </div>
-    </section>
-
-    <section class="cake-section">
-      <div class="section-inner">
-        <h2 class="section-title">Gelato Cakes</h2>
-        <br />
-        <div id="gelato"></div>
-      </div>
-    </section>
-
-    <section class="cake-section">
-      <div class="section-inner">
-        <h2 class="section-title">Ice Cream Cakes</h2>
-        <br />
-        <div id="icecream"></div>
-      </div>
-    </section>
-
-    <section class="cake-section">
-      <div class="section-inner">
-        <h2 class="section-title">Theme Cakes</h2>
-        <br />
-        <div id="themes"></div>
-      </div>
-    </section>
-
+    </main>
     <div id="footer"></div>
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -57,47 +57,47 @@
           </div>
           <div class="product-grid">
             <article class="product-card">
-              <a href="pages/productDetails.html"
-                ><img
-                  src="img/cakes/gelato/choco-gelato.webp"
-                  alt="Choco Gelato Cake"
-              /></a>
+              <img
+                src="img/cakes/gelato/choco-gelato.webp"
+                alt="Choco Gelato Cake"
+              />
               <div class="product-card__body">
                 <h3>Choco Gelato Cake</h3>
-                <p>PHP 500.00</p>
+                <p>₱300.00</p>
+                <button class="btn btn-primary" type="button" data-featured-product="Choco Gelato Cake">Add to cart</button>
               </div>
             </article>
             <article class="product-card">
-              <a href="pages/productDetails.html"
-                ><img
-                  src="img/cakes/normal flavors/choco.webp"
-                  alt="Chocolate Cake"
-              /></a>
+              <img
+                src="img/cakes/normal flavors/choco.webp"
+                alt="Chocolate Cake"
+              />
               <div class="product-card__body">
                 <h3>Chocolate Cake</h3>
-                <p>PHP 500.00</p>
+                <p>₱350.00</p>
+                <button class="btn btn-primary" type="button" data-featured-product="Chocolate Cake">Add to cart</button>
               </div>
             </article>
             <article class="product-card">
-              <a href="pages/productDetails.html"
-                ><img
-                  src="img/cakes/normal flavors/cookies.webp"
-                  alt="Cookies and Cream Cake"
-              /></a>
+              <img
+                src="img/cakes/normal flavors/cookies.webp"
+                alt="Cookies &amp; Cream Cake"
+              />
               <div class="product-card__body">
                 <h3>Cookies &amp; Cream Cake</h3>
-                <p>PHP 500.00</p>
+                <p>₱400.00</p>
+                <button class="btn btn-primary" type="button" data-featured-product="Cookies &amp; Cream Cake">Add to cart</button>
               </div>
             </article>
             <article class="product-card">
-              <a href="pages/productDetails.html"
-                ><img
-                  src="img/cakes/normal flavors/caramel.webp"
-                  alt="Salted Caramel Cake"
-              /></a>
+              <img
+                src="img/cakes/normal flavors/caramel.webp"
+                alt="Salted Caramel Cake"
+              />
               <div class="product-card__body">
                 <h3>Salted Caramel Cake</h3>
-                <p>PHP 500.00</p>
+                <p>₱300.00</p>
+                <button class="btn btn-primary" type="button" data-featured-product="Caramel Cake">Add to cart</button>
               </div>
             </article>
           </div>
@@ -114,18 +114,18 @@
               will help you choose the right sweet centerpiece.
             </p>
           </div>
-          <form class="contact-form">
+          <form class="contact-form" data-contact-form>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" autocomplete="name" required />
             </div>
             <div class="form-group">
               <label for="contact">Contact Number</label>
-              <input type="tel" id="contact" name="contact" />
+              <input type="tel" id="contact" name="contact" autocomplete="tel" />
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" autocomplete="email" required />
             </div>
             <div class="form-group">
               <label for="message">Message</label>
@@ -137,6 +137,7 @@
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <p role="status" class="form-status"></p>
           </form>
         </div>
       </section>
