@@ -3,12 +3,8 @@
 <h1 align="center">🍰 Sweet Delights 🍰</h1>
 
 <p align="center">
-  A simple, modern and responsive cake shop website.
+  Sweet Delights is a simple, modern and responsive cake shop website created to showcase freshly baked cakes with different varieties and decorations.
 </p>
-
-<h2 align="center">🌸 About the Website 🌸</h2>
-
-Sweet Delights is a simple, modern and responsive cake shop website created to showcase freshly baked cakes with different varieties and decorations.
 
 <h2 align="center">✨ FEATURES ✨</h2>
 
