@@ -5,38 +5,39 @@
 <h3 align="center">✨ FEATURES ✨</h3>
 
 🏠 **Home**  
-Welcoming hero section featuring the Sweet Delights brand.
+- Welcoming hero section featuring the Sweet Delights brand.
 
 🎂 **Cakes**  
-Browse the available cakes and desserts.
+- Browse the available cakes and desserts.
 
 🛍️ **Order**  
-Provides customers with an easy way to order their favorite cakes.
+- Provides customers with an easy way to order their favorite cakes.
 
 👩‍🍳 **About Us**  
-Information about the cake shop.
+- Information about the cake shop.
 
 🛒 **Shopping Cart**  
-Cart icon for accessing selected items.
+- Cart icon for accessing selected items.
 
 📱 **Responsive Design**  
-Designed to provide a good experience across desktop, tablet, and mobile devices.
+- Designed to provide a good experience across desktop, tablet, and mobile devices.
 
 🎨 **Elegant UI**  
-Warm colors, attractive cake imagery, and a bakery-inspired visual style.
+- Warm colors, attractive cake imagery, and a bakery-inspired visual style.
 
 🔘 **Call-to-Action Buttons**  
-Quick **View Cakes** and **Order Now** options on the homepage.
+- Quick **View Cakes** and **Order Now** options on the homepage.
 
 <div align="center">
   
-<h3>🔗 Website Link 🔗</h3>
+<h2>🔗 Website Link 🔗</h2>
 https://cakeshop-website-ruby.vercel.app/
 
 </div>
 
 <div align="center">
-<h3>📄 License 📄</h3>
+
+<h2>📄 License 📄</h2>
 This project is intended for educational, portfolio, and demonstration purposes only.
 
 </div>
