@@ -3,7 +3,7 @@
 <p> A simple, modern, and responsive cake shop website created to showcase freshly baked cakes with different varieties and decorations. </p> <img width="1345" height="632" alt="Sweet Delights Preview" src="https://github.com/user-attachments/assets/fd7efcfd-28b0-47a7-a9fe-e2729272fc2f" /> </div>
 
 <h3 align="center">✨ FEATURES ✨</h3>
-
+<p>
 🏠 **Home**  
 - Welcoming hero section featuring the Sweet Delights brand.
 
@@ -27,7 +27,7 @@
 
 🔘 **Call-to-Action Buttons**  
 - Quick **View Cakes** and **Order Now** options on the homepage.
-
+</p>
 <div align="center">
   
 <h2>🔗 Website Link 🔗</h2>
