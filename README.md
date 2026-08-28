@@ -1,40 +1,41 @@
-<img width="1345" height="632" alt="cake" src="https://github.com/user-attachments/assets/fd7efcfd-28b0-47a7-a9fe-e2729272fc2f" />
+<div align="center">
+🍰 Sweet Delights
+<p> A simple, modern, and responsive cake shop website created to showcase freshly baked cakes with different varieties and decorations. </p> <img width="1345" height="632" alt="Sweet Delights Preview" src="https://github.com/user-attachments/assets/fd7efcfd-28b0-47a7-a9fe-e2729272fc2f" /> </div>
+✨ Features
 
-<h1 align="center">🍰 Sweet Delights 🍰</h1>
-
-<p align="center">
-  Sweet Delights is a simple, modern and responsive cake shop website created to showcase freshly baked cakes with different varieties and decorations.
-</p>
-
-<h2 align="center">✨ FEATURES ✨</h2>
-
-🏠 **Home**  
+🏠 Home
 Welcoming hero section featuring the Sweet Delights brand.
 
-🎂 **Cakes**  
+🎂 Cakes
 Browse the available cakes and desserts.
 
-🛍️ **Order**  
+🛍️ Order
 Provides customers with an easy way to order their favorite cakes.
 
-👩‍🍳 **About Us**  
+👩‍🍳 About Us
 Information about the cake shop.
 
-🛒 **Shopping Cart**  
+🛒 Shopping Cart
 Cart icon for accessing selected items.
 
-📱 **Responsive Design**  
+📱 Responsive Design
 Designed to provide a good experience across desktop, tablet, and mobile devices.
 
-🎨 **Elegant UI**  
+🎨 Elegant UI
 Warm colors, attractive cake imagery, and a bakery-inspired visual style.
 
-🔘 **Call-to-Action Buttons**  
-Quick **View Cakes** and **Order Now** options on the homepage.
+🔘 Call-to-Action Buttons
+Quick View Cakes and Order Now options on the homepage.
 
-<h2 align="center">🔗 Website Link 🔗</h2>
-<p align="center">https://cakeshop-website-ruby.vercel.app/</p>
+🔗 Website
+<div align="center">
 
-<h2 align="center">📄 License 📄</h2>
-<p align="center">This project is intended for educational, portfolio, and demonstration purposes only.</p>
+https://cakeshop-website-ruby.vercel.app/
 
+</div>
+📄 License
+<div align="center">
+
+This project is intended for educational, portfolio, and demonstration purposes only.
+
+</div>
