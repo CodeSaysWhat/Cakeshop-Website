@@ -33,9 +33,8 @@ Warm colors, attractive cake imagery, and a bakery-inspired visual style.
 Quick **View Cakes** and **Order Now** options on the homepage.
 
 <h2 align="center">🔗 Website Link 🔗</h2>
-https://cakeshop-website-ruby.vercel.app/
+<p align="center">https://cakeshop-website-ruby.vercel.app/</p>
 
 <h2 align="center">📄 License 📄</h2>
-
-This project is intended for educational, portfolio, and demonstration purposes only.
+<p align="center">This project is intended for educational, portfolio, and demonstration purposes only.</p>
 
