@@ -1,8 +1,13 @@
 const CART_STORAGE_KEY = "sweet-delights-cart";
 const ORDER_DRAFT_STORAGE_KEY = "sweet-delights-order-draft";
 const CONTACT_DRAFT_STORAGE_KEY = "sweet-delights-contact-draft";
+const scriptUrl = document.currentScript?.src;
+const siteBaseUrl = scriptUrl
+  ? new URL("../", scriptUrl)
+  : new URL("./", document.baseURI);
+
 function siteUrl(path) {
-  return new URL(String(path).replace(/^\/+/, ""), window.location.origin + "/").href;
+  return new URL(String(path).replace(/^\/+/, ""), siteBaseUrl).href;
 }
 
 
