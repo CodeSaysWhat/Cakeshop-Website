@@ -274,7 +274,7 @@ async function renderProductDetails() {
       toggleProductInCart(cartButton, product),
     );
   } catch {
-    target.innerHTML = `<p class="empty-state">This cake could not be found. <a class="text-link" href="${siteUrl("pages/cakes.html")}">Browse our cakes</a>.</p>`;
+    target.innerHTML = `<p class="empty-state">This cake could not be found. <a class="text-link" href="${siteUrl("pages/Cakes.html")}">Browse our cakes</a>.</p>`;
   }
 }
 
@@ -284,10 +284,10 @@ function renderCart() {
   const cart = getCart();
   if (!cart.length) {
     target.innerHTML =
-      '<p class="empty-state">Your cart is empty. <a class="text-link" href="/pages/cakes.html">Browse our cakes</a>.</p>';
+      '<p class="empty-state">Your cart is empty. <a class="text-link" href="/pages/Cakes.html">Browse our cakes</a>.</p>';
     return;
   }
-  target.innerHTML = `<div class="cart-list">${cart.map((item, index) => `<article class="cart-item"><img src="${assetUrl(item.img)}" alt="${escapeHtml(item.name)}"><div><h2>${escapeHtml(item.name)}</h2><p>${formattedPrice(item.price)}</p></div><label>Quantity <input data-quantity="${index}" type="number" min="1" value="${item.quantity}"></label><button class="text-link" data-remove="${index}" type="button">Remove</button></article>`).join("")}</div><div class="cart-actions"><div class="cart-total"><span>Estimated subtotal</span><strong>${formattedSubtotal(cart)}</strong></div><p>Ready to choose delivery details or request a custom cake?</p><a class="btn btn-primary" href="${siteUrl("pages/order.html")}">Proceed to order</a><a class="btn btn-secondary" href="${siteUrl("pages/cakes.html")}">Add more cakes</a></div>`;
+  target.innerHTML = `<div class="cart-list">${cart.map((item, index) => `<article class="cart-item"><img src="${assetUrl(item.img)}" alt="${escapeHtml(item.name)}"><div><h2>${escapeHtml(item.name)}</h2><p>${formattedPrice(item.price)}</p></div><label>Quantity <input data-quantity="${index}" type="number" min="1" value="${item.quantity}"></label><button class="text-link" data-remove="${index}" type="button">Remove</button></article>`).join("")}</div><div class="cart-actions"><div class="cart-total"><span>Estimated subtotal</span><strong>${formattedSubtotal(cart)}</strong></div><p>Ready to choose delivery details or request a custom cake?</p><a class="btn btn-primary" href="${siteUrl("pages/order.html")}">Proceed to order</a><a class="btn btn-secondary" href="${siteUrl("pages/Cakes.html")}">Add more cakes</a></div>`;
   target.querySelectorAll("[data-quantity]").forEach((input) =>
     input.addEventListener("change", () => {
       const updated = getCart();
